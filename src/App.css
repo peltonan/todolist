@@ -8,8 +8,8 @@
 
 body {
   background: linear-gradient(90deg,
-      rgba(48, 16, 255, 1) 0%,
-      rgba(100, 115, 255, 1) 100%);
+      rgb(37, 36, 41) 0%,
+      rgb(29, 29, 32) 100%);
 }
 
 .todo-app {
@@ -18,11 +18,9 @@ body {
   justify-content: start;
   width: 520px;
   min-height: 600px;
-  background: #161a2b;
   text-align: center;
-  margin: 128px auto;
+  margin: 50px auto;
   border-radius: 10px;
-  padding-bottom: 32px;
 }
 
 h1 {
@@ -41,11 +39,11 @@ h1 {
 }
 
 .todo-input {
-  padding: 14px 32px 14px 16px;
-  border-radius: 4px 0 0 4px;
+  padding: 15px 32px 14px 16px;
+  border-radius: 5px 0 0 4px;
   border: 2px solid #5d0cff;
   outline: none;
-  width: 320px;
+  width: 380px;
   background: transparent;
   color: #fff;
 }
@@ -73,9 +71,9 @@ h1 {
 
 .todo-button.edit {
   background: linear-gradient(90deg,
-      rgba(20, 159, 255, 1) 0%,
-      rgba(17, 122, 255, 1) 100%);
-  padding: 16px 22px;
+      rgb(0, 115, 192) 0%,
+      rgb(0, 189, 189) 100%);
+  padding: 17px 22px;
 }
 
 .todo-container {
@@ -89,32 +87,30 @@ h1 {
   justify-content: space-between;
   align-items: center;
   margin: 4px auto;
+  margin-bottom: 10px;
   color: #fff;
-  background: linear-gradient(90deg,
-      rgba(255, 118, 20, 1) 0%,
-      rgba(255, 84, 17, 1) 100%);
-
-  padding: 16px;
+  background: transparent;
+  padding: 15px;
   border-radius: 5px;
+  border-collapse: separate;
   width: 90%;
+  border: 2px solid;
+  border-image: linear-gradient(to right, rgb(1, 247, 255), rgb(0, 107, 150)) 1;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0);
 }
 
 .todo-row:nth-child(4n + 1) {
-  background: linear-gradient(90deg,
-      rgba(93, 12, 255, 1) 0%,
-      rgba(155, 0, 250, 1) 100%);
+  border-image: linear-gradient(to right, rgb(0, 174, 255), rgb(53, 50, 204)) 1;
 }
 
 .todo-row:nth-child(4n + 2) {
-  background: linear-gradient(90deg,
-      rgba(255, 12, 241, 1) 0%,
-      rgba(250, 0, 135, 1) 100%);
+  border-image: linear-gradient(to right, rgb(181, 69, 255), rgb(99, 0, 148)) 1;
 }
 
 .todo-row:nth-child(4n + 3) {
-  background: linear-gradient(90deg,
-      rgba(20, 159, 255, 1) 0%,
-      rgba(17, 122, 255, 1) 100%);
+  border-image: linear-gradient(to right, rgb(249, 86, 255), rgb(204, 50, 153)) 1;
 }
 
 .icons {
